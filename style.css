@@ -155,12 +155,11 @@ html , body{
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .ptop {
-        flex-direction: flex;
-        justify-content: center;
-        text-align: center;
+        flex-direction: row; /* Change to 'row' for flex direction */
+        justify-content: space-between; /* Add spacing between items */
+        align-items: center; /* Center items vertically */
         padding: 20px;
         height: auto;
-        
     }
 
     .elem {
@@ -168,19 +167,19 @@ html , body{
         padding: 5px;
         height: auto;
         max-width: 90%;
-        width: 90%; /* Decrease width for smaller screens */
-        max-height: 150px; /* Set maximum height for smaller screens */
+        width: 90%;
+        max-height: 150px;
     }
 
     .elem h3 {
-        font-size: 18px; /* Decrease font size for smaller screens */
+        font-size: 18px;
     }
 
     .bubble {
-        font-size: 18px; /* Decrease the font size for smaller screens */
-        width: 40px; /* Decrease width for smaller screens */
-        height: 40px; /* Decrease height for smaller screens */
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
     }
     
- 
+    
 }
