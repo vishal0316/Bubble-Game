@@ -1,4 +1,9 @@
 var timer = 60;
+var score = 0;
+
+function increaseScore() {
+    score 
+}
 
 
 function getNewHit() {
