@@ -26,9 +26,6 @@
 
 
 
-
-
-
 html , body{
     height: 100%;
     width: 100%;
@@ -83,23 +80,25 @@ html , body{
 .elem {
     display: flex;
    align-items: center;
-   gap: 20px;
+   justify-content: center;
+   gap: 10px;
    border: 3px solid black; /* Add border properties */
    padding: 10px; /* Add padding to give some space between content and border */
    border-radius: 10px;
    /* justify-content: space-between; */
-   box-shadow: 0 0 10px 5px rgba(221, 191, 21, 0.7);
+   /* box-shadow: 0 0 10px 5px rgba(221, 191, 21, 0.7); */
     /* Add a maximum width for responsiveness */
-    max-width: 100%; 
-    height: auto; /* Set initial height */
-    position: relative;
+    overflow:hidden ;
+    padding-left: 8px;
 }
 
 
 
 .elem h3{
-    font-size: 25px;
-    font-weight: 100;
+    font-size: 15px;
+  
+    padding: 0 10px;
+    border-radius: 20px;
     color: #000000;
 }
 
@@ -107,9 +106,14 @@ html , body{
 .box {
     /* border-style: solid ;
     border-color:  rgb(0, 0, 0); */
+    height: 40px;
+    width: 40px;
     color: black;
+    display: flex;
+align-items: center;
+justify-content: center;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 15px;
     padding: 10px;
     
     border-radius: 5px;
@@ -151,41 +155,39 @@ html , body{
 
 
 
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .ptop {
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-        height: auto;
-        
-
-
-    .elem {
-        gap: 10px;
-        padding: 5px;
-        height: auto;
-        max-width: 90%;
-        width: 90%; /* Decrease width for smaller screens */
-        max-height: 150px; /* Set maximum height for smaller screens */
+@media (max-width:666px){
+    .ptop{
+        height: 80px;
+        padding: 0 5%;
     }
-
-    .elem h3 {
-        font-size: 10px; /* Decrease font size for smaller screens */
+    .pbtm{
+        height: calc(100% - 80px);
+    padding-top:15px;
+    padding-bottom: 10px;
+    overflow: hidden;
     }
+    .main{
+       
 
-    .elem .box {
-        font-size: 10px;
+        background-position: center;
+        background-size: contain;
     }
-
-    .bubble {
-        font-size: 18px; /* Decrease the font size for smaller screens */
-        width: 40px; /* Decrease width for smaller screens */
-        height: 40px; /* Decrease height for smaller screens */
+    .elem{
+        height: 30px;
+        font-size: 15px;
+  
     }
-    
- 
-}}
+     .box {
+        font-size: 8px;
+     }
 
+    .elem h3{
+        font-size: 8px;
+     }
+     
+    .bubble{
+        height: 35px;
+        width: 35px;
+        font-size: 16px;
+    }
+}
