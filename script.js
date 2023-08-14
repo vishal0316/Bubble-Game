@@ -1,14 +1,3 @@
-// Get the bubble element
-const bubble = document.querySelector('.bubble');
-
-// Add a click event listener to the bubble element
-bubble.addEventListener('click', () => {
-    // Check if the device supports the Vibration API
-    if ('vibrate' in navigator) {
-        // Vibrate for 100 milliseconds
-        navigator.vibrate(100);
-    }
-});
 
 
 var timer = 60;
