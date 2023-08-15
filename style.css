@@ -78,6 +78,7 @@ html , body{
 
 
 .elem {
+    background-color: #f75842;
     display: flex;
    align-items: center;
    justify-content: center;
@@ -95,6 +96,8 @@ html , body{
 
 
 .elem h3{
+    
+    display: flex;
     font-size: 15px;
   
     padding: 0 10px;
@@ -106,6 +109,7 @@ html , body{
 .box {
     /* border-style: solid ;
     border-color:  rgb(0, 0, 0); */
+    
     height: 40px;
     width: 40px;
     color: black;
@@ -120,7 +124,8 @@ justify-content: center;
 }
 
 .pbtm {
-    
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
