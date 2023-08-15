@@ -32,7 +32,7 @@
                 document.querySelector("#timerval").textContent = timer;
             } else {
                 clearInterval(timerint);
-                document.querySelector(".pbtm").innerHTML = `<h1> Game Over </h1>`;
+                document.querySelector(".pbtm").innerHTML = `<h1>Game Over </h1>`;
             }
         }, 1000);
     }
