@@ -160,44 +160,43 @@ justify-content: center;
 
 
 
-@media (max-width:666px){
-    .ptop{
-        height: 80px;
+@media (max-width: 666px) {
+    .ptop {
+        height: 60px;
         padding: 0 5%;
     }
-    .pbtm{
+
+    .pbtm {
         justify-content: center;
         text-align: center;
         display: flex;
-        height: calc(100% - 80px);
-    padding-top:15px;
-    padding-bottom: 10px;
-    overflow: hidden;
+        height: calc(100% - 60px);
+        padding-top: 15px;
+        padding-bottom: 10px;
+        overflow: hidden;
     }
 
-   
-    .main{
-       
-
+    .main {
         background-position: center;
         background-size: contain;
     }
-    .elem{
-        height: 30px;
-        font-size: 15px;
-  
-    }
-     .box {
-        font-size: 8px;
-     }
 
-    .elem h3{
+    .elem {
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .box {
         font-size: 8px;
-     }
-     
-    .bubble{
-        height: 35px;
-        width: 35px;
-        font-size: 16px;
+    }
+
+    .elem h3 {
+        font-size: 8px;
+    }
+
+    .bubble {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
     }
 }
